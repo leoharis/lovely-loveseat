@@ -21,18 +21,33 @@ customer_one_itemization += lovely_loveseat_description + "\n"
 customer_one_total += luxurious_lamp_price
 customer_one_itemization += luxurious_lamp_description
 
-# Checkout
+# Customer 1 - checkout
 customer_one_tax = customer_one_total * sales_tax
 customer_one_total += customer_one_tax
 
-# Create receipt for Customer 1
+# Customer 1 - create receipt
 print("Customer One Items:")
 print(customer_one_itemization)
 print("Customer One Total:")
 print("%.2f" % customer_one_total)
+print("\n")
 
+# Customer 2 - initialisation
+customer_two_total = 0
+customer_two_itemization = ""
 
+# Customer 2 - purchases
+customer_two_total += stylish_settee_price
+customer_two_itemization += stylish_settee_description + "\n"
+customer_two_total += luxurious_lamp_price
+customer_two_itemization += luxurious_lamp_description
 
+# Customer 2 - checkout
+customer_two_tax = customer_two_total * sales_tax
+customer_two_total += customer_two_tax
 
-
-
+# Customer 2 - create receipt
+print("Customer Two Items:")
+print(customer_two_itemization)
+print("Customer Two Total:")
+print("%.2f" % customer_two_total)
